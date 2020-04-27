@@ -35,13 +35,12 @@
                                                     <action selector="globeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mrf-s4-04x"/>
                                                 </connections>
                                             </button>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qua-B0-uGh">
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="grK-Yi-xwz">
                                                 <rect key="frame" x="48" y="0.0" width="326" height="40"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <connections>
-                                                    <action selector="searchFieldPressed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="Ti4-s8-kPM"/>
-                                                    <action selector="searchedPressed:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="H5l-bi-CuV"/>
+                                                    <action selector="searchTextFieldPressed:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="uDI-8p-V8X"/>
                                                 </connections>
                                             </textField>
                                         </subviews>
@@ -196,8 +195,8 @@
                         <outlet property="newCasesLabel" destination="qDB-A4-ZQs" id="eHl-O7-h0U"/>
                         <outlet property="newDeathsLabel" destination="4RC-UQ-trv" id="NTT-wh-GCn"/>
                         <outlet property="newRecoveriesLabel" destination="GAR-Mw-Cmo" id="JiW-e0-rj7"/>
-                        <outlet property="searchFieldText" destination="Qua-B0-uGh" id="PEc-7c-1kF"/>
-                        <outlet property="totalTestsLabel" destination="Qle-dN-rHM" id="8Oo-9p-40k"/>
+                        <outlet property="searchTextField" destination="grK-Yi-xwz" id="QLK-hU-RSf"/>
+                        <outlet property="totalTestsLabel" destination="g5h-af-BDj" id="wDJ-jV-JSM"/>
                         <outlet property="updatedLabel" destination="Zok-oZ-cyj" id="0DZ-6P-8D0"/>
                     </connections>
                 </viewController>
@@ -213,7 +212,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jXB-H4-PaW">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" systemColor="systemGray6Color" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
