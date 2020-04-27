@@ -78,10 +78,11 @@
 		8806205D2456BC7F00A66FA9 /* Covid19-Tracker */ = {
 			isa = PBXGroup;
 			children = (
+				8806205E2456BC7F00A66FA9 /* AppDelegate.swift */,
+				880620602456BC7F00A66FA9 /* SceneDelegate.swift */,
 				880620722456C39400A66FA9 /* Model */,
 				880620732456C39A00A66FA9 /* View */,
 				880620742456C3A500A66FA9 /* Controller */,
-				880620602456BC7F00A66FA9 /* SceneDelegate.swift */,
 				880620672456BC7F00A66FA9 /* Assets.xcassets */,
 				8806206C2456BC7F00A66FA9 /* Info.plist */,
 			);
@@ -110,7 +111,6 @@
 		880620742456C3A500A66FA9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8806205E2456BC7F00A66FA9 /* AppDelegate.swift */,
 				880620622456BC7F00A66FA9 /* TrackerViewController.swift */,
 			);
 			path = Controller;
