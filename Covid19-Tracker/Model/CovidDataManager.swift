@@ -19,13 +19,6 @@ protocol CovidDataManagerDelegate {
 
 struct CovidDataManager {
     
-    //    corona.lmao.ninja/v2
-    
-    //    let service = CovidDataManager(baseURL: "https://corona.lmao.ninja/v2/countries/")
-    //    service.getCountryData(endpoint: countryName)
-    //
-    //    fileprivate var baseURL = ""
-    
     var delegate:  CovidDataManagerDelegate?
     
     let baseURL = "https://corona.lmao.ninja/v2/countries"
@@ -39,7 +32,6 @@ struct CovidDataManager {
         let urlString = "\(baseURL)/\(countryNameWithSpace ?? "")"
         
         getCountryData(urlString: urlString)
-        
     }
     
     func fetchWorldData() {

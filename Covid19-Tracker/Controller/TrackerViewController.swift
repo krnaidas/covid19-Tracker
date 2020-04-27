@@ -40,6 +40,7 @@ class TrackerViewController: UIViewController {
         
         covidDataManager.fetchWorldData()
     }
+
     
     @IBAction func searchTextFieldPressed(_ sender: UITextField) {
         if let nav = navigationController {
@@ -74,7 +75,6 @@ extension TrackerViewController: CountryPickerViewDelegate {
             countryName = country.name
             getCovidDatafromCountry()
             searchTextField.text = countryName
-            
         }
     }
 }
@@ -123,6 +123,4 @@ extension TrackerViewController: CovidDataManagerDelegate {
     func didFailWithError(error: Error) {
         print(error)
     }
-    
-    
 }
