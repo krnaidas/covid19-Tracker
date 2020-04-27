@@ -52,7 +52,7 @@ class TrackerViewController: UIViewController {
     
     @IBAction func globeButtonPressed(_ sender: UIButton) {
         covidDataManager.fetchWorldData()
-        searchTextField.text = ""
+        searchTextField.text = "Search for a country"
     }
 }
 
