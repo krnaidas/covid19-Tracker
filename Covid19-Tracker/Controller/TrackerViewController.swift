@@ -31,14 +31,12 @@ class TrackerViewController: UIViewController {
     @IBOutlet weak var newDeathsLabel: UILabel!
     @IBOutlet weak var totalTestsLabel: UILabel!
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print("appear")
         covidDataManager.delegate = self
         cpvInternal.delegate = self
-        
         
         covidDataManager.fetchWorldData()
     }
