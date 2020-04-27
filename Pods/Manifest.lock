@@ -1,0 +1,20 @@
+PODS:
+  - Alamofire (5.1.0)
+  - CountryPickerView (3.1.2)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.1)
+  - CountryPickerView
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - CountryPickerView
+
+SPEC CHECKSUMS:
+  Alamofire: 9d5c5f602928e512395b30950c5984eca840093c
+  CountryPickerView: 08ff5f391143aa79e2ae21b0eaa5c15395a80d22
+
+PODFILE CHECKSUM: 4daa70bedba20d9fa2b66ad32a680cc6e5f91e45
+
+COCOAPODS: 1.9.1
