@@ -69,6 +69,7 @@ extension TrackerViewController: CountryPickerViewDelegate {
         if country.name == "United States" {
             countryName = "USA"
             getCovidDatafromCountry()
+            searchTextField.text = country.name
             
         } else {
             
