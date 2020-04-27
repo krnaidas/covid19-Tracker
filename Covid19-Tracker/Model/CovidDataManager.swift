@@ -36,6 +36,7 @@ struct CovidDataManager {
     
     func fetchWorldData() {
         getWorldData(urlString: worldURL)
+        
     }
 
     //MARK: - Get all country names request

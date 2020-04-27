@@ -19,7 +19,6 @@ class TrackerViewController: UIViewController {
     
     @IBOutlet weak var searchTextField: UITextField!
     
-    
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var updatedLabel: UILabel!
     
