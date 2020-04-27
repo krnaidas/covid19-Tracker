@@ -27,8 +27,9 @@ struct CovidDataModel: Codable {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
-        let DTString = formatter.string(from: Date())
+        let DTString = formatter.string(from: Date(timeIntervalSince1970: (dateTimeUpdated / 1000)))
         
+        print(DTString)
         return DTString
     }
     
@@ -87,7 +88,7 @@ struct WorldCovidDataModel: Codable {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
         
-        let DTString = formatter.string(from: Date())
+        let DTString = formatter.string(from: Date(timeIntervalSince1970: (dateTimeUpdated / 1000)))
         
         return DTString
     }
