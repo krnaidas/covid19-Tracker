@@ -33,7 +33,6 @@ class TrackerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("appear")
         covidDataManager.delegate = self
         cpvInternal.delegate = self
         

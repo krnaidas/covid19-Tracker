@@ -70,8 +70,6 @@ struct CovidDataManager {
             
             let covidStats = CovidDataModel(dateTimeUpdated: updated, countryName: country, totalCases: cases, totalDeaths: deaths, casesToday: todayCases, deathsToday: todayDeaths, totalRecovered: recovered, totalTests: tests)
             
-            print(covidStats)
-            
             return covidStats
             
             
