@@ -30,6 +30,16 @@ class TrackerViewController: UIViewController {
     @IBOutlet weak var newDeathsLabel: UILabel!
     @IBOutlet weak var totalTestsLabel: UILabel!
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        navigationController?.isNavigationBarHidden = false
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
